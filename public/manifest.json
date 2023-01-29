@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "deepTabs",
+  "description": "deep tab manager for your browser.",
+  "version": "0.0.1",
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "16": "logo-small.png",
+    "48": "logo-small.png",
+    "128": "logo-small.png"
+  },
+  "background": {
+    "scripts": ["app/background.js"]
+  },
+  "permissions": [
+    "webRequest",
+    "*://developer.mozilla.org/"
+  ]
+}
